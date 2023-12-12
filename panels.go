@@ -1,14 +1,14 @@
 package main
 
 import (
-	"github.com/gdamore/tcell"
+	"github.com/gdamore/tcell/v2"
 	"github.com/sachaos/tview"
 )
 
 func preparePacketList() *tview.Table {
 	table := tview.NewTable().
 		SetBorders(false).
-		SetSeparator(tview.GraphicsVertBar)
+		SetSeparator(tview.Borders.Vertical)
 	table.SetTitle("Packets").
 		SetBackgroundColor(tcell.ColorDefault).
 		SetBorder(true)

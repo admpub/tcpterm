@@ -11,7 +11,7 @@ import (
 
 	"io/ioutil"
 
-	"github.com/gdamore/tcell"
+	"github.com/gdamore/tcell/v2"
 	"github.com/google/gopacket"
 	"github.com/sachaos/tview"
 )
