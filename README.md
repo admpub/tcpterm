@@ -15,6 +15,8 @@ Install
 
 For Debian based distriubutions install package _libpcap-dev_
 
+For Windows based distriubutions install _npcap_ https://npcap.com/#download
+
 ### Go install
 
 ```shell
