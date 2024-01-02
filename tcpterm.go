@@ -9,8 +9,6 @@ import (
 	"strconv"
 	"time"
 
-	"io/ioutil"
-
 	"github.com/gdamore/tcell/v2"
 	"github.com/google/gopacket"
 	"github.com/sachaos/tview"
@@ -59,7 +57,7 @@ func NewTcpterm(src *gopacket.PacketSource, debug bool) *Tcpterm {
 	if debug {
 		w = os.Stderr
 	} else {
-		w = ioutil.Discard
+		w = io.Discard
 	}
 
 	app := &Tcpterm{
